@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+body,
+html {
+    margin: 6px 0 0 6px;
+    padding: 0;
+    font-family: Poppins;
+}
+.link{
+  margin-top:  20px;
+  width:12rem
+}
+.title{
+  width: 20rem;
+  margin-top:  20px;
+  text-align: center;
+  font-weight: 700
+}
+#logo{
+  margin:15px 7% 0 3%;
+
+}
+
+.contenu {
+margin-left: 25%;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    margin-top: 12em;
+    max-width: 640px;
+    font-size: 13px;
+    
+}
+
+ul.ks-cboxtags {
+    list-style: none;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    flex-wrap: wrap;
+    gap: 0.25em;
+    left: 0px;
+    width: 1850px!important;
+}
+.ks-cboxtags{
+  padding-left:0;
+}
+.boxs{
+    display: flex;
+    position: relative;
+    overflow-x: auto;
+    scrollbar-color:   #efe2b5 #f7f2e2;
+    scrollbar-width: thin;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 200px!important;
+    transition: height 0.3s cubic-bezier(.05, .69, .14, 1);
+    margin-top: 60px;
+    --mask: linear-gradient(to right, 
+      rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) 92%, 
+      rgba(0,0,0, 0) 98%, rgba(0,0,0, 0) 0
+) 100% 50% / 100% 100% repeat-x;
+  -webkit-mask: var(--mask); 
+  mask: var(--mask);
+}
+ 
+
+ul.ks-cboxtags li label{
+    display:inline-block;
+    background-color: rgba(255, 255, 255, .9);
+    border: 2px solid rgba(139, 139, 139, .3);
+    color: #000000;
+    border-radius: 25px;
+    white-space: nowrap;
+    margin: 3px 0px;
+    transition: all .2s;
+  padding: 12px 12px;
+    cursor: pointer;
+}
+
+ul.ks-cboxtags li label::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    padding: 2px 6px 2px 2px;
+    transition: transform .3s ease-in-out;
+}
+ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+    content: "\f00c";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+    border: 2px solid #eeeeee;
+    background-color: #000000;
+    color: #fff;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+.valider{
+  background-color: rgba(255, 255, 255, .9);
+  border: 2px solid rgba(118, 118, 118, 0.3);
+  color: #000000;
+  border-radius: 25px;
+    transition: all .2s;
+  text-align: center;
+  font-size:14px;
+  padding: 20px;
+  width: 125px;
+  cursor:pointer;
+  margin: 5% 0 0 40%;
+  font-family: Poppins;
+}
+.contenu input[type=text]{
+ 
+  font-family: poppins;
+  border:none;
+  background-color:#f7f2e2;
+  width:55em;
+  height: 3.2rem;
+  border-radius: 15px;
+padding-left:20px ;
+outline: none;
+}
+.search-input .autocomplete{
+  padding:0px;
+  max-height: 280px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.autocomplete li {
+  list-style: none;
+  padding:8px 0px;
+  padding-left:5px;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+  display: none;
+}
+.autocomplete li:hover {
+background-color: #efefef;
+}
+.search-input.active .autocomplete{
+  padding:10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.search-input.active .autocomplete li{
+  display: block;
+}
+#checklist li input{
+  border: none;
+  background: none;
+  font-family: Poppins;
+  display: inline-flex;
+  background-color: #efe2b5;
+  border-radius: 25px;
+  padding:10px 15px;
+  margin-right: 10px;
+}
+#checklist li{
+  list-style: none;
+}
